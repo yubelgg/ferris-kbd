@@ -26,7 +26,7 @@
         compatible = "zmk,combos";
         combo_esc {
             timeout-ms = <50>;
-            key-positions = <17 18>;
+            key-positions = <6 7>;
             bindings = <&kp ESC>;
         };
     };
@@ -79,7 +79,7 @@
         //│          │          │          │ CLEAR BT │PROFILE 2 │   │          │          │          │          │          │
             &trans     &trans     &trans    &bt BT_CLR &bt BT_SEL 2    &trans     &trans     &trans     &trans     &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &trans     &trans         &trans     &trans
+                                             &trans     &trans         &to 0      &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
