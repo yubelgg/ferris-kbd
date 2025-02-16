@@ -80,7 +80,7 @@
         //│  Z       │  X       │  C       │  D       │  V       │   │  K       │  H       │ , <      │ . >      │ ' "      │
             &kp Z      &kp X      &kp C      &kp D      &kp V          &kp K      &kp H      &kp COMMA  &kp DOT    &kp SQT 
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &kp BSPC   &mo 1          &kp ENTER  &kp SPACE 
+                                             &kp BSPC   &mo 1          &kp SPACE  &kp ENTER 
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -89,15 +89,15 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ 7        │ 8        │ 9        │          │
-            &none      &kp FSLH   &kp GRAVE  &none      &none          &kp CAPS   &kp N7     &kp N8     &kp N9     &to 2
+            &kp BSLH   &kp FSLH   &kp GRAVE  &none      &none          &kp CAPS   &kp N7     &kp N8     &kp N9     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │ =        │          │          │          │   │          │ 4        │ 5        │ 6        │          │
-            &kp LGUI   &kp EQUAL  &kp LSHFT  &kp MINUS  &none          &none      &kp N4     &kp N5     &kp N6     &none 
+        //│          │          │          │          │          │   │          │ 4        │ 5        │ 6        │          │
+            &kp LGUI   &kp LALT   &kp LSHFT  &kp MINUS  &none          &kp EQUAL  &kp N4     &kp N5     &kp N6     &none 
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │ 1        │ 2        │ 3        │          │
             &kp LCTRL  &none      &none      &kp PLUS   &none          &kp N0     &kp N1     &kp N2     &kp N3     &none
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
-                                             &none      &none          &none      &none
+                                             &none      &none          &to 2      &none
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
             >;
         };
@@ -105,11 +105,11 @@
         tri_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │  RESET   │
-           &sys_reset  &none     &none    &bt BT_SEL 3 &bt BT_SEL 0    &none      &none      &none      &none      &sys_reset
+        //│ RESET    │          │          │          │PROFILE 0 │   │          │          │          │          │          │
+           &sys_reset  &none     &none    &bt BT_SEL 3 &bt BT_SEL 0    &none      &none      &none      &none      &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │BOOTLOADER│
-          &bootloader  &none     &none    &bt BT_SEL 4 &bt BT_SEL 1    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &bootloader
+        //│BOOTLOADER│          │          │          │PROFILE 1 │   │          │          │          │          │          │
+          &bootloader  &none     &none    &bt BT_SEL 4 &bt BT_SEL 1    &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │CLEAR BT  │PROFILE 2 │   │          │          │          │          │          │
             &none      &none     &none      &bt BT_CLR &bt BT_SEL 2    &none      &none      &none      &none      &none
