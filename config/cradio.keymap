@@ -131,7 +131,7 @@
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
         //│          │          │          │          │          │   │          │ 7        │ 8        │ 9        │          │
-            &kp BSLH   &kp FLSH   &kp GRAVE  &none      &none          &none      &kp N7     &kp N8     &kp N9     &none
+            &kp BSLH   &kp FSLH   &kp GRAVE  &none      &none          &none      &kp N7     &kp N8     &kp N9     &none
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
         //│          │          │          │          │          │   │          │ 4        │ 5        │ 6        │          │
             &kp LSHFT  &kp EQUAL  &kp MINUS  &kp PLUS   &none          &none      &kp N4     &kp N5     &kp N6     &none 
