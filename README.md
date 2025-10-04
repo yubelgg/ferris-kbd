@@ -31,7 +31,7 @@ This build runs [ZMK firmware](https://zmk.dev/) with extensive customization fo
 
 ### Layout
 
-The keyboard uses a custom **SOUL layout** (inspired by RSTHD/optimized for English):
+The keyboard uses a custom **Engram layout**:
 
 ```
 Z  Y  O  U  ;     '  L  D  W  Q
